@@ -1,5 +1,5 @@
 # ISHI会版OpenMPW TR10-1について
-これは、[ISHI会版OpenMPW TR10-1](https://ishi-kai.org/openmpw/shuttle/TR10/2024/10/14/shuttle_ISHI-Kai_OpenMPW-TR10-1_start.html)にみんなで相乗りしたxschemによる回路図とklayoutによるレイアアウト置き場です。
+これは、[ISHI会版OpenMPW TR10-1](https://ishi-kai.org/openmpw/shuttle/tr10/2024/10/15/shuttle_ISHI-Kai_OpenMPW-TR10-1_start.html)にみんなで相乗りしたxschemによる回路図とklayoutによるレイアアウト置き場です。
 
 
 ## みんなの[相乗りチップ](Submitted/all_members_layout.gds)
@@ -16,6 +16,15 @@
 
 
 # 参加者リスト
+- [dokunira](https://github.com/dokunira/inverter_layout)
+- [f0r3st](https://github.com/foorests/inverter_ISHI)
+- [hiro-ogawa](https://github.com/hiro-ogawa/ishi-kai-OpenMPW-TR10-1)
+- [hyumanase](https://github.com/hyumanase/inverter)
+- [matsumoto325](https://github.com/matsumoto325/ISHI-Kai-commit/)
+- [monmonmon](https://github.com/monmonmon/ishi-20241027)
+- [tomoya_nonymous](https://github.com/tomoyanonymous/20241027_ishikai_inverter)
+- [xian_DIY](https://github.com/ugeugeHigh/ISHI_xian_first)
+- [masahiro](https://github.com/pochiMasahiro/inverter_masahiro)
 
 
 ## 各種リスト
@@ -24,3 +33,153 @@
 
 
 # 参加者のデザイン
+## [dokunira](https://github.com/dokunira/inverter_layout)：Inverter回路
+### MOSのパラメータ
+| | ゲート幅 w (μm) | ゲート長 l (μm) |
+|----|----|----|
+|PMOS| 4 | 1 |
+|NMOS| 2 | 1 |
+
+### 感想
+以前からオープンソースのレイアウトソフト「KLayout」で設計を行いたいと思っていましたが、なかなか取り組む機会がありませんでした。今回は教えていただきながら進めたことで、短時間で設計を完了することができました。Design Rules Check (DRC) や xschemとの連携による Layout Versus Schematic (LVS) などのレイアウト検証も行え、大変満足しています。ありがとうございました。
+
+- ![回路図](member_project/dokunira/inverter_layout/inv_schem.png)
+- ![レイアウト](member_project/dokunira/inverter_layout/inv_layout.png)
+
+#### Dラッチ回路
+[初めての半導体設計・製造体験 for ISHI会のOpenMPW](https://ishikai.connpass.com/event/332952/) でインバータのレイアウト設計をした後、枠がもし余っていたらと思って作ったDラッチのレイアウトです。  
+
+- ![回路図](member_project/dokunira/Dlatch_layout/Dlatch_sch.jpeg)
+- ![レイアウト](member_project/dokunira/Dlatch_layout/Dlatch_gds.jpeg)
+- ![レイアウト with pad](member_project/dokunira/Dlatch_layout/Dlatch_pad.jpeg)
+
+
+## [f0r3st](https://github.com/foorests/inverter_ISHI)：Inverter回路
+### 感想
+アナログ回路について、教科書で仕組みやいくつかの回路を読んだりはしていたのですが、具体的な実装方法が分からなかったので今回のイベントに参加しました。  
+xschemやklayoutを使って実際に回路図やレイアウトパターンを作るのが楽しかったです。ありがとうございました！  
+
+- ![回路図](member_project/f0r3st/schematic.png)
+- ![レイアウト](member_project/f0r3st/layout.png)
+
+
+## [hiro-ogawa](https://github.com/hiro-ogawa/ishi-kai-OpenMPW-TR10-1)：Inverter回路
+- 環境構築
+  - [セットアップスクリプト](https://github.com/ishi-kai/OpenRule1umPDK_setupEDA)
+  - セットアップスクリプトの中身を確認したら、環境構築をガリガリやっているので、怖くなって専用PCを用意して、OSをクリーンインストール
+  - Ubuntu 22.04.5 をセットアップ
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y git
+
+git clone git@github.com:ishi-kai/OpenRule1umPDK_setupEDA.git
+
+cd OpenRule1umPDK_setupEDA
+bash ./eda-setup.sh
+bash ./pdk_TR-setup.sh
+```
+
+- 使ったツール
+  - xschem
+  - ngspice
+  - klayout
+
+### 設計情報
+
+- Pch FET
+  - W: 60um
+  - L: 10um
+- Nch FET
+  - W: 20um
+  - L: 10um
+
+### シミュレーション結果
+- ![シミュレーション・電圧](member_project/hiro-ogawa/images/vout.png)
+- ![シミュレーション・電流](member_project/hiro-ogawa/images/ivd.png)
+
+### 感想
+- とりあえず最後まで完走できた
+- 事前にOSのクリーンインストールをしておいたので、セットアップで問題が発生することがなくて良かった
+- 半導体が自分で作れるって夢が広がる
+- まぁそう言っても、すごいチップが作れるわけではないだろうけど・・・
+- アナログ回路がわからんといけないのかな
+- ツールが全体的に使いにくいのが残念
+
+- ![回路図](member_project/hiro-ogawa/images/schematic.png)
+- ![レイアウト](member_project/hiro-ogawa/images/layout.png)
+
+
+## [hyumanase](https://github.com/hyumanase/inverter)：Inverter回路
+### 感想
+[2024年10月イベント：初めての半導体設計・製造体験 for ISHI会のOpenMPW - connpass](https://ishikai.connpass.com/event/332952/)にて、初めての半導体設計をしました。難しくもたのしい時間でした。マウスと、めげない心と、皆さんの支えでなんとかなりました。ありがとうございました！  
+
+- ![回路図](member_project/hyumanase/schematic.png)
+- ![レイアウト](member_project/hyumanase/layout.png)
+
+
+## [matsumoto325](https://github.com/matsumoto325/ISHI-Kai-commit/)：Inverter回路
+### 感想
+
+* 会場について
+
+     GMO Yours・フクラスの図書室で実施。施設はとてもきれいでした。  
+     結構前に渋谷駅に着いたのですが、道がだいぶ変わっていて場所がわからない。下見をするかネットで良く調べてから行けばよかった。  
+     少し遅れて到着したのでConnpassのフィードで連絡したのですが返信なし。たまたま中の人を一人知っていたので個別に連絡とって中に入れました。その節はお手数をおかけいたしました。
+
+* 講習について
+
+     環境の構築はスクリプト2発で出来て、時間はかかりましたが簡単に準備ができました。  
+     資料は記載された内容のままに操作すれば出来るような書き方にはなっていなくて手間取りましたが、それがかえって理解度の向上につながった気がします。  
+
+* xschem について
+
+     操作感は慣れるまで少しかかったけど、なかなか良かった。ライブラリも事前にある程度用意してくれたのでさくさく進められましたが、自分で作らなければならない局面とかあるのかな？と思ったりしてますが、まだ調べてないです。どこかで拾ってインポートする方法とかも聞いてみたいです。
+
+* klayout について
+
+     もっと自動的に配置してくれるのかと思ったら以外に手動でしたｗ  
+     1bit メモリに値する回路でもこんなに苦労するんだったら、大型のチップを焼くのにはどのくらい労力がかかるのだろうと思うと、いつも大型の LSI を設計してくれてる人たちに感謝の気持ちが湧いてきました。
+     他の人のレイアウトを覗き見したら面白いレイアウトがあって、それも楽しめました。
+
+
+- ![回路図](member_project/matsumoto325/schematic.png)
+- ![レイアウト](member_project/matsumoto325/layout.png)
+
+
+## [monmonmon](https://github.com/monmonmon/ishi-20241027)：Inverter回路
+### 感想
+お絵描きツールの使い方を覚えた！  
+
+- ![回路図](member_project/monmonmon/schematic.png)
+- ![レイアウト](member_project/monmonmon/layout.png)
+
+
+## [tomoya_nonymous](https://github.com/tomoyanonymous/20241027_ishikai_inverter)：Inverter回路
+### 感想
+（感想）ほぼ初心者状態からのスタートでしたが一応作れたようなのでよかったです！  
+
+- ![回路図](member_project/tomoya_nonymous/schematic.png)
+- ![レイアウト](member_project/tomoya_nonymous/layout.png)
+
+
+## [xian_DIY](https://github.com/ugeugeHigh/ISHI_xian_first)：Inverter回路
+### 感想
+色々教えて頂きありがとうございました！  
+初めてのツールという事もあり、開発環境の構築で躓いてしまいました。  
+UbuntuをいれたLets noteを持って会場にいったのですが、何故か何度もフリーズしてしまい…  
+当日は完走できませんでしたが、翌日自宅のメイン環境で再度環境構築をしてトライしてみたところ、なんとか最後までいきつけました。  
+製造枠がまだ空いているとのことで頑張ってみたのですが、果たして間に合うか！？  
+
+- ![回路図](member_project/xian_DIY/schematic.png)
+- ![レイアウト](member_project/xian_DIY/layout.png)
+
+
+## [masahiro](https://github.com/pochiMasahiro/inverter_masahiro)：Inverter回路
+### 感想
+FET2個の単純なインバータでもIC設計を体験することができてとても楽しかったです。資料も充実していて独学でも困りませんでした。次はもう少し複雑な回路を設計してみようと思います。  
+
+- ![回路図](member_project/masahiro/schematic.png)
+- ![レイアウト](member_project/masahiro/layout.png)
+
