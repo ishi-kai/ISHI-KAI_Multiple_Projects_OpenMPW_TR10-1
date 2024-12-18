@@ -3,8 +3,8 @@
 
 
 ## みんなの[相乗りチップ](Submitted/all_members_layout.gds)
-- ![all_members_layout](Submitted/all_members_layout.png)
-- ![all_members_layout_using](Submitted/all_members_layout_using.png)
+- ![all_members_layout](images/submited_layout.png)
+- ![all_members_layout_using](images/submited_layout_name.png)
 
 ### 相乗りチップのラベル
 - 緑枠  
@@ -25,10 +25,11 @@
 - [tomoya_nonymous](https://github.com/tomoyanonymous/20241027_ishikai_inverter)
 - [xian_DIY](https://github.com/ugeugeHigh/ISHI_xian_first)
 - [masahiro](https://github.com/pochiMasahiro/inverter_masahiro)
+- [lufe](https://github.com/1uf3/)
+- [noritsuna](https://github.com/noritsuna/)
 
 
 ## 各種リスト
-- [メンバーリスト](docs/member_list.pdf)
 - [ピンリスト](docs/pin_list.pdf)
 
 
@@ -182,4 +183,72 @@ FET2個の単純なインバータでもIC設計を体験することができ�
 
 - ![回路図](member_project/masahiro/schematic.png)
 - ![レイアウト](member_project/masahiro/layout.png)
+
+
+
+## DCDC_DOWN_Converter_4_ISHI-KAI_OpenMPW_TR10-1
+ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ（12v->5V）です。
+
+
+### Members 
+- [lufe](https://github.com/1uf3/vco)
+    - VCO担当
+- [noritsuna](https://github.com/noritsuna/DCDC_DOWN_Converter_4_ISHI-KAI_OpenMPW_TR10-1)
+    - 降圧部担当
+
+
+### 内容
+- ![DCDC_DOWN_SLIDE_1](member_project/DCDC_DOWN/images/DCDC_down/slide1.png)
+- ![DCDC_DOWN_SLIDE_2](member_project/DCDC_DOWN/images/DCDC_down/slide2.png)
+- ![DCDC_DOWN_SLIDE_3](member_project/DCDC_DOWN/images/DCDC_down/slide3.png)
+
+### vco
+[lufe](https://github.com/1uf3/vco)担当
+
+#### xschem
+
+##### inverter
+
+![inverter](https://raw.githubusercontent.com/1uf3/vco/main/images/inverter.png)
+
+##### buffer
+
+![buffer](https://raw.githubusercontent.com/1uf3/vco/main/images/buffer.png)
+
+##### vco
+
+![vco](https://raw.githubusercontent.com/1uf3/vco/main/images/vco.png)
+
+##### simulated vco hz
+
+![simulated_vco_hz](https://raw.githubusercontent.com/1uf3/vco/main/images/simulated_vco_hz.png)
+
+#### klayout
+
+![klayout_vco](https://raw.githubusercontent.com/1uf3/vco/main/images/klayout_vco.png)
+
+
+### 降圧部
+#### xschem
+- ![xschem_tb](member_project/DCDC_DOWN/images/xschem_tb.png)
+
+##### simulation
+- ![xschem_ngspice](member_project/DCDC_DOWN/images/xschem_ngspice.png)
+- ![xschem_ngspice_cir](member_project/DCDC_DOWN/images/xschem_ngspice_cir.png)
+
+#### klayout
+- ![klayout_dcdc_base](member_project/DCDC_DOWN/images/klayout_dcdc_base.png)
+
+
+### 降圧型DCDCコンバータ
+#### xschem
+- ![xschem_full](member_project/DCDC_DOWN/images/xschem_full.png)
+
+##### simulation
+- ![xschem_full_ngspice](member_project/DCDC_DOWN/images/xschem_full_ngspice.png)
+- ![xschem_full_ngspice_cir](member_project/DCDC_DOWN/images/xschem_full_ngspice_cir.png)
+
+#### klayout
+- ![klayout_dcdc_down](member_project/DCDC_DOWN/images/klayout_dcdc_down.png)
+
 
