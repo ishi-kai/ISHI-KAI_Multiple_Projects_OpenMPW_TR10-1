@@ -251,4 +251,12 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 #### klayout
 - ![klayout_dcdc_down](member_project/DCDC_DOWN/images/klayout_dcdc_down.png)
 
+### 昇圧DCDC
+#### xschem
+- ![Boost_xschem](member_project/BoostDCDC/images/Boost_xschem.png)
 
+#### ngspice
+- ![Boost_ngspice](member_project/BoostDCDC/images/Boost_ngspice.png)
+
+#### klayout
+- ![Boost_klayout](member_project/BoostDCDC/images/Boost_klayout.png) 
