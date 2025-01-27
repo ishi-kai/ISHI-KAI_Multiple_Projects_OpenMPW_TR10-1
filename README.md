@@ -27,6 +27,8 @@
 - [masahiro](https://github.com/pochiMasahiro/inverter_masahiro)
 - [lufe](https://github.com/1uf3/)
 - [noritsuna](https://github.com/noritsuna/)
+- [sebasu](https://github.com/sebasu-semi/)
+- [akapochi](https://github.com/akahoshi0502/)
 
 
 ## 各種リスト
@@ -251,12 +253,22 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 #### klayout
 - ![klayout_dcdc_down](member_project/DCDC_DOWN/images/klayout_dcdc_down.png)
 
-### 昇圧DCDC
+
+## [昇圧型DCDCコンバータ](member_project/DCDC_DOWN/)
+ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ（5V->12v）です。
+
+### Members 
+- [sebasu](https://github.com/sebasu-semi/)
+    - 昇圧部担当
+- [akapochi](https://github.com/akahoshi0502/)
+    - 変換担当
+
+### [昇圧型DCDCコンバータ](member_project/DCDC_DOWN/)
 #### xschem
-- ![Boost_xschem](member_project/BoostDCDC/images/Boost_xschem.png)
+- ![Boost_xschem](https://github.com/sebasu-semi/BoostDCDC/raw/main/images/Boost_xschem.png)
 
 #### ngspice
-- ![Boost_ngspice](member_project/BoostDCDC/images/Boost_ngspice.png)
+- ![Boost_ngspice](https://github.com/sebasu-semi/BoostDCDC/raw/main/images/Boost_ngspice.png)
 
 #### klayout
-- ![Boost_klayout](member_project/BoostDCDC/images/Boost_klayout.png) 
+- ![Boost_klayout](https://github.com/sebasu-semi/BoostDCDC/raw/main/images/Boost_klayout.png) 
