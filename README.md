@@ -254,7 +254,7 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 - ![klayout_dcdc_down](member_project/DCDC_DOWN/images/klayout_dcdc_down.png)
 
 
-## [昇圧型DCDCコンバータ](member_project/DCDC_DOWN/)
+## [昇圧型DCDCコンバータ](member_project/BoostDCDC/)
 ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ（5V->12v）です。
 
 ### Members 
@@ -263,7 +263,7 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 - [akapochi](https://github.com/akahoshi0502/)
     - 変換担当
 
-### [昇圧型DCDCコンバータ](member_project/DCDC_DOWN/)
+### [昇圧型DCDCコンバータ](member_project/BoostDCDC/)
 #### xschem
 - ![Boost_xschem](https://github.com/sebasu-semi/BoostDCDC/raw/main/images/Boost_xschem.png)
 
