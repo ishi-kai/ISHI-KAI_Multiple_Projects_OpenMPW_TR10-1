@@ -1,0 +1,3 @@
+[submodule "member_project/BoostDCDC"]
+	path = member_project/BoostDCDC
+	url = https://github.com/sebasu-semi/BoostDCDC.git
