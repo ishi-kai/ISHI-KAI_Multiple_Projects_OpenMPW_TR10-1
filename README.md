@@ -272,3 +272,23 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 
 #### klayout
 - ![Boost_klayout](https://github.com/sebasu-semi/BoostDCDC/raw/main/images/Boost_klayout.png) 
+
+
+# 測定会
+## ボンディング
+パッケージの選択肢がないため、自分たちでボンディングすることにしました。  
+そこで、ボンディング用の基板をKiCADで設計して、製造しました。
+
+- ![Bonding Boardアートワーク](images/bonding_board_kicad.png) 
+
+- [Bonding Board](kicad/OpenMPW-TR10/) 
+
+
+### ボンディング作業風景
+
+
+### ボンディング完了
+
+
+## 製造されたチップ
+
