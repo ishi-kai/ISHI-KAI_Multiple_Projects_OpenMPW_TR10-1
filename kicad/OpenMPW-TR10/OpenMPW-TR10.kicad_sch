@@ -2660,7 +2660,7 @@
 				)
 			)
 		)
-		(property "Footprint" "OpenMPW-TR10:PAD-44_EP_5x5_Pitch0.2032mm"
+		(property "Footprint" "OpenMPW-TR10:PAD-44_EP_5x5_Pitch0.2216mm"
 			(at 151.384 95.504 0)
 			(effects
 				(font
