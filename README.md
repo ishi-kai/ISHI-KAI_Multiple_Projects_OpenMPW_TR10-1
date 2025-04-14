@@ -5,7 +5,7 @@
 ## みんなの[相乗りチップ](Submitted/all_members_layout.gds)
 - ![all_members_layout](images/submited_layout.png)
 - ![all_members_layout_using](images/submited_layout_name.png)
-- ![chip_photo](chip_photo/chip_photo.JPG)
+- ![chip_photo](images/chip_photo.JPG)
 
 ### 相乗りチップのラベル
 - 緑枠  
@@ -279,13 +279,13 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 ## 製造されたチップ
 到着したチップです。  
 
-- ![chip_01](chip_photo/chip_01.jpg)
-- ![chip_baredie](chip_photo/chip_baredie.JPG)
+- ![chip_01](images/chip_01.jpg)
+- ![chip_baredie](images/chip_baredie.JPG)
 
 
 チップ写真です。  
 
-- ![chip_photo](chip_photo/chip_photo.JPG)
+- ![chip_photo](images/chip_photo.JPG)
 
 
 ## ボンディング
@@ -346,7 +346,7 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 ## パッケージされたチップ
 東海理化さんのご厚意により「パッケージした場合のサンプル」としてISHI会のチップをパッケージしていただけました！  
 
-- ![chip_package](images/chip_package.JPG)
+- ![chip_package](images/chip_package.jpg)
 
 
 ## 測定会風景
