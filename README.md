@@ -280,7 +280,7 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 到着したチップです。  
 
 - ![chip_01](images/chip_01.jpg)
-- ![chip_baredie](images/chip_baredie.JPG)
+- ![chip_baredie](images/chip_baredie.jpg)
 
 
 チップ写真です。  
