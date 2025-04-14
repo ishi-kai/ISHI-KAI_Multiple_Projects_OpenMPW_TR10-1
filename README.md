@@ -5,6 +5,7 @@
 ## みんなの[相乗りチップ](Submitted/all_members_layout.gds)
 - ![all_members_layout](images/submited_layout.png)
 - ![all_members_layout_using](images/submited_layout_name.png)
+- ![chip_photo](chip_photo/chip_photo.JPG)
 
 ### 相乗りチップのラベル
 - 緑枠  
@@ -275,6 +276,18 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 
 
 # 測定会
+## 製造されたチップ
+到着したチップです。  
+
+- ![chip_01](chip_photo/chip_01.jpg)
+- ![chip_baredie](chip_photo/chip_baredie.JPG)
+
+
+チップ写真です。  
+
+- ![chip_photo](chip_photo/chip_photo.JPG)
+
+
 ## ボンディング
 パッケージの選択肢がないため、自分たちでボンディングすることにしました。  
 そこで、ボンディング用の基板をKiCADで設計して、製造しました。
@@ -283,12 +296,77 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 
 - [Bonding Board](kicad/OpenMPW-TR10/) 
 
+### ボンディング用のボード
+ボンディング用のボードにベアダイを張り付けた状態です。  
+今回はUVレジンで貼り付けました。本来ならペースト半田で取り付けるのが良いかと思います。  
+
+- ![bonding board 1](images/bonding_board_01.jpg)
+- ![bonding board 2](images/bonding_board_02.jpg)
+- ![bonding board 3](images/bonding_board_03.jpg)
+
 
 ### ボンディング作業風景
+ボンディング中の風景です。  
+みんな、初めてのため苦戦しました。  
+
+- ![bonding work 1](images/bonding_work_01.jpg)
+- ![bonding work 2](images/bonding_work_02.jpg)
+- ![bonding work 3](images/bonding_work_03.jpg)
 
 
 ### ボンディング完了
+無事にボンディングが完了したチップたちです。  
+
+- ![bonding_chip_01](images/bonding_chip_01.jpg)
+- ![bonding_chip_02](images/bonding_chip_02.jpg)
+- ![bonding_chip_03](images/bonding_chip_03.jpg)
 
 
-## 製造されたチップ
+### ポッティング完了
+ボンディングしたチップをUVレジンでポッティングしました。  
+思ったよりもきれいにポッティングできたようです。  
+透明なため特性としては最悪ですが、観察用には最適でした。  
 
+- ![bonding_potting_01](images/bonding_potting_01.jpg)
+- ![bonding_potting_02](images/bonding_potting_02.jpg)
+- ![bonding_potting_03](images/bonding_potting_03.jpg)
+- ![bonding_potting_04](images/bonding_potting_04.jpg)
+- ![bonding_potting_05](images/bonding_potting_05.jpg)
+- ![bonding_potting_06](images/bonding_potting_06.jpg)
+
+
+### ボンディング測定
+ボンディングしたチップを測定しました。  
+動作点が4Vとなりました。ちょっと高いため、ハズレかけていて接触抵抗が高い線が紛れていそうです。  
+
+- ![bonding_measure_01](images/bonding_measure_01.jpg)
+- ![bonding_measure_02](images/bonding_measure_02.png)
+
+
+## パッケージされたチップ
+東海理化さんのご厚意により「パッケージした場合のサンプル」としてISHI会のチップをパッケージしていただけました！  
+
+- ![chip_package](images/chip_package.JPG)
+
+
+## 測定会風景
+測定用の装置やセットアップ中の風景です。  
+
+- ![measure_device](images/measure_device.jpg)
+- ![measure_setup](images/measure_setup.jpg)
+
+
+### インバーター測定
+1kHz, 500kHz, 1MHzでどうさせてみた図です。  
+500kHzくらいで限界って感じですね。  
+まともに高速で動かすようには設計指定なので当然の結果ではありますが。高速に動かすには、Wを広くしたり、バランスよくP-FET,N-FETのL,Wを合わせる必要があります。  
+
+- ![measure_inverter_1kHz](images/measure_inverter_1kHz.jpg)
+- ![measure_inverter_500kHz](images/measure_inverter_500kHz.jpg)
+- ![measure_inverter_1MHz](images/measure_inverter_1MHz.jpg)
+
+
+### Dラッチ測定
+無事に使用通りに動きとなりました。  
+
+- ![measure_d_latch](images/measure_d_latch.jpg)
