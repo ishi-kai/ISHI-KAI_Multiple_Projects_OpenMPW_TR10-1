@@ -329,10 +329,10 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 
 - ![bonding_potting_01](images/bonding_potting_01.jpg)
 - ![bonding_potting_02](images/bonding_potting_02.jpg)
-- ![bonding_potting_03](images/bonding_potting_03.jpg)
-- ![bonding_potting_04](images/bonding_potting_04.jpg)
-- ![bonding_potting_05](images/bonding_potting_05.jpg)
-- ![bonding_potting_06](images/bonding_potting_06.jpg)
+- ![bonding_potting_03](images/bonding_potting_03.JPG)
+- ![bonding_potting_04](images/bonding_potting_04.JPG)
+- ![bonding_potting_05](images/bonding_potting_05.JPG)
+- ![bonding_potting_06](images/bonding_potting_06.JPG)
 
 
 ### ボンディング測定
