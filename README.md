@@ -370,3 +370,27 @@ ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1 向けの降圧型DCDCコンバータ�
 無事に使用通りに動きとなりました。  
 
 - ![measure_d_latch](images/measure_d_latch.jpg)
+
+
+### 降圧型DCDCコンバータ
+#### VCO部
+- [回路図やレイアウト](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1?tab=readme-ov-file#vco)  
+
+##### VCOの動作確認
+100kHz設計で33kHz動作となりました。  
+なぜ、1/3の性能になってしまったかは、レイアウトしたときに出る寄生容量や測定用プローブなどの容量などにより、静電容量（キャパシタの大きさ）が増えるので、クロックが2～5倍くらい遅くなるのは普通だったりします。特に、この環境では容量の大きいプローブ（内部ではフェムトファラッドだがプローブはピコファラッドクラスとなる）があるので、妥当な結果と言える感じです。  
+ですので、本当は、レイアウトしたときにPEX（寄生容量摘出）をするのが正攻法なのですが、OpenRule1umではPEX機能がないので仕方ないところですね。  
+
+-  ![0.5V時の波形](/images/2024_dcdc_down_vco_0_5v.png)  
+-  ![2.5V時の波形](/images/2024_dcdc_down_vco_2_5v.png)  
+-  ![5.0V時の波形](/images/2024_dcdc_down_vco_5_0v.png)  
+-  ![テスト環境](/images/2024_dcdc_down_vco_tb.jpg)  
+
+### 降圧部
+- [回路図やレイアウト](https://github.com/ishi-kai/ISHI-KAI_Multiple_Projects_OpenMPW_TR10-1?tab=readme-ov-file#%E9%99%8D%E5%9C%A7%E9%83%A8)
+
+##### 降圧部の動作確認
+残念ながら、何も出力されていない状態です。手元に数種類しかコイル（インダクタ）が無いので、もうすこしいろいろなインダクタを入手して再実験してみたいと思います。VCOのクロックに合わせて、出力電圧が微増している現象が出ているので、もう少し大容量のインダクタやキャパシタに変えると動きそうな感じはしています。  
+
+-  ![テスト環境](/images/2024_dcdc_down_tb.jpg)  
+
